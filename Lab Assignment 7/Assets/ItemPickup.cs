@@ -8,8 +8,8 @@ public class ItemPickup : MonoBehaviour
     {
         if(collision.gameObject.name == "Player")
         {
-            Destroy(this.transform.gameObject);
             Debug.Log("Item collected!");
+            Destroy(this.transform.gameObject);
         }
     }
 }
